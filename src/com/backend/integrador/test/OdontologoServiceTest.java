@@ -10,16 +10,16 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 
-     public class OdontologoServiceTest {
+public class OdontologoServiceTest {
         OdontologoService odontologoService = new OdontologoService(new OdontologoDaoH2());
 
 
         @Test
-        void deberiaAgregarUnMedicamento(){
+        void deberiaAgregarUnOdontologo(){
             Odontologo odont1 = new Odontologo(2345677, "mateo", "lopez");
             Odontologo odontologoInsertado = odontologoService.registrarOdontologo(odont1);
 
-            assertNotNull(odontologoInsertado.getId());
+            assertNotNull(odontologoInsertado.getNombre());
         }
 
         @Test
@@ -29,6 +29,4 @@ import static org.junit.jupiter.api.Assertions.*;
             assertTrue(odontologosTest.size() >= 1);
 
         }
-
-
-    }
+}
