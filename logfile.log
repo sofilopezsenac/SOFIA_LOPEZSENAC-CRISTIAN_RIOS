@@ -1,0 +1,4 @@
+[2023-08-10 00:39:14] [ ERROR] [OdontologoDaoH2:87] Table "ODONTOLOGOS" not found (this database is empty); SQL statement:
+SELECT * FROM ODONTOLOGOS [42104-214]
+[2023-08-10 00:39:15] [ ERROR] [OdontologoDaoH2:46] Table "ODONTOLOGOS" not found (this database is empty); SQL statement:
+INSERT INTO ODONTOLOGOS (MATRICULA, NOMBRE, APELLIDO) VALUES (?, ?, ?) [42104-214]
